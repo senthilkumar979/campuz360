@@ -1,15 +1,16 @@
 import type { NextConfig } from 'next';
 
 const remotes = {
-  nexus: process.env.NEXUS_URL ?? 'http://localhost:3001',
-  flow: process.env.FLOW_URL ?? 'http://localhost:3002',
-  connect: process.env.CONNECT_URL ?? 'http://localhost:3003',
-  sphere: process.env.SPHERE_URL ?? 'http://localhost:3004',
-  residence: process.env.RESIDENCE_URL ?? 'http://localhost:3005',
-  pulse: process.env.PULSE_URL ?? 'http://localhost:3006',
+  nexus: process.env.NEXUS_URL ?? 'http://127.0.0.1:3001',
+  flow: process.env.FLOW_URL ?? 'http://127.0.0.1:3002',
+  connect: process.env.CONNECT_URL ?? 'http://127.0.0.1:3003',
+  sphere: process.env.SPHERE_URL ?? 'http://127.0.0.1:3004',
+  residence: process.env.RESIDENCE_URL ?? 'http://127.0.0.1:3005',
+  pulse: process.env.PULSE_URL ?? 'http://127.0.0.1:3006',
 };
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ['127.0.0.1', 'localhost'],
   webpack: (config) => {
     config.output.uniqueName = 'campuz360-shell';
     return config;

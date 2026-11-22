@@ -2,9 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --port 3006",
+    "dev": "next dev --hostname :: --port 3006",
     "build": "next build",
-    "start": "next start --port 3006",
+    "start": "next start --hostname localhost --port 3006",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --passWithNoTests"
