@@ -1,0 +1,18 @@
+export const Logo = ({ size = 34 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden>
+    <path
+      d="M46 12A24 24 0 1 0 46 52"
+      fill="none"
+      stroke="#00b3ee"
+      strokeWidth="7"
+    />
+    <path
+      d="M42 18A17 17 0 1 0 42 46"
+      fill="none"
+      stroke="#0095c7"
+      strokeWidth="6"
+    />
+    <path d="M47 6l9 6-9 6z" fill="#7dd3f5" />
+    <rect x="48" y="44" width="8" height="12" rx="3" fill="#00b3ee" />
+  </svg>
+);

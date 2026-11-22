@@ -1,0 +1,14 @@
+---
+description: Campuz360 brand and UI package usage
+globs: apps/**/*.{tsx,css},packages/ui/**/*,packages/config/**/*
+alwaysApply: false
+---
+
+# Design system
+
+- Primary: `#00b3ee` (`primary`); dark `#0095c7` (`primary-dark` / `blue`); light `#33c2f1` (`primary-light` / `sky`).
+- Ink `#0f172a`, bg `#f4fafd`, mut `#64748b`, line `#d7e8f0`, danger `#e11d48`.
+- Font (whole app): `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif`.
+- Global `p` font-size: `12px` via `@campuz360/ui/globals.css`.
+- Use `@campuz360/ui` primitives. Do not load Plus Jakarta Sans or alternate brand palettes.
+- Tokens live in `packages/config/tailwind-preset.css`.

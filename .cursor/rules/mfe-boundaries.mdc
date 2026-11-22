@@ -1,0 +1,14 @@
+---
+description: Enforce per-MFE ownership and table prefixes
+globs: apps/**/*
+alwaysApply: false
+---
+
+# MFE boundaries
+
+- Edit only the app the user is working on unless they explicitly request shared changes.
+- Do not import React components from another `apps/*` package.
+- Cross-MFE links use absolute paths (`/flow`, `/nexus/login`).
+- Remote apps keep their `basePath` and use `ModuleChrome` from `@campuz360/ui`.
+- Domain tables: `flow_*`, `connect_*`, `sphere_*`, `residence_*`, `pulse_*`; identity tables belong to Nexus.
+- Notify users via `create_notification` RPC / Connect tables — do not invent a second inbox store.

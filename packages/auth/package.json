@@ -1,0 +1,31 @@
+{
+  "name": "@campuz360/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./middleware": "./src/middleware.ts",
+    "./server": "./src/server.ts",
+    "./client": "./src/client.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "echo \"no lint\""
+  },
+  "dependencies": {
+    "@campuz360/contracts": "workspace:*",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.50.2"
+  },
+  "peerDependencies": {
+    "next": "^15.0.0 || ^16.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@campuz360/config": "workspace:*",
+    "@types/react": "^19.1.8",
+    "next": "^15.3.4",
+    "typescript": "^5.8.3"
+  }
+}

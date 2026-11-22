@@ -1,0 +1,13 @@
+---
+description: Campuz360 core architecture and non-negotiables for every session
+alwaysApply: true
+---
+
+# Campuz360 core
+
+- Vertical microfrontends: separate Next.js apps under `apps/*`, composed by Shell **rewrites**, not Module Federation.
+- Stack: Next.js App Router, TypeScript, Tailwind v4, Radix via `@campuz360/ui`, Supabase Auth+RLS, pnpm + Turborepo.
+- Shared code only in `packages/{ui,auth,contracts,config}`.
+- Hosting and Supabase are cohort-owned accounts — never hardcode cloud project IDs or commit secrets.
+- Follow `AGENTS.md` and `docs/` (architecture, boundaries, design, security).
+- Prefer minimal diffs scoped to the user’s MFE. Ask before large cross-cutting refactors.

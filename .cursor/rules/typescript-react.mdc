@@ -1,0 +1,14 @@
+---
+description: TypeScript and React patterns for Campuz360 apps
+globs: **/*.{ts,tsx}
+alwaysApply: false
+---
+
+# TypeScript / React
+
+- Strict TypeScript; avoid `any`; prefer `interface` for object shapes.
+- Named exports; functional components; boolean prefixes (`is`, `has`, `can`).
+- Server Components + Server Actions first.
+- Form Server Actions must return `void` / `Promise<void>` when passed to `<form action={...}>`.
+- Zod schemas for shared inputs live in `@campuz360/contracts`.
+- Keep files lean (~150 lines); extract helpers instead of growing god components.

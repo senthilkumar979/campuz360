@@ -1,0 +1,14 @@
+---
+description: Supabase RLS, auth, and migration safety
+globs: supabase/**/*,packages/auth/**/*,apps/**/actions.ts
+alwaysApply: false
+---
+
+# Data & security
+
+- RLS on every new `public` table in the same migration.
+- Use `@campuz360/auth` helpers; verify with `getUser()` on the server.
+- Never authorize from `user_metadata`. Use roles/permissions + `has_permission` / `get_user_permissions`.
+- Never expose `service_role` via `NEXT_PUBLIC_*` or client components.
+- Audit Nexus role grants/suspensions in `audit_events`.
+- Create migrations with `supabase migration new` — do not invent filenames casually.

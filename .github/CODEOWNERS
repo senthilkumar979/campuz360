@@ -1,0 +1,12 @@
+# Soft ownership hints for PR review suggestions (not enforced on public Hobby workflows).
+# Replace GitHub usernames when teams are assigned.
+
+/apps/shell/ @mentorbridge
+/apps/nexus/ @mentorbridge
+/apps/flow/ @mentorbridge
+/apps/connect/ @mentorbridge
+/apps/sphere/ @mentorbridge
+/apps/residence/ @mentorbridge
+/apps/pulse/ @mentorbridge
+/packages/ @mentorbridge
+/supabase/ @mentorbridge

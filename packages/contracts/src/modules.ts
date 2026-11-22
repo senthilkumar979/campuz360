@@ -1,0 +1,58 @@
+export const MODULES = [
+  {
+    id: 'nexus',
+    name: 'Nexus',
+    path: '/nexus',
+    emoji: '🔐',
+    color: '#00b3ee',
+    description: 'Identity, profiles, roles and campus directory.',
+    permission: 'nexus.access',
+  },
+  {
+    id: 'flow',
+    name: 'Flow',
+    path: '/flow',
+    emoji: '🔄',
+    color: '#0095c7',
+    description: 'Leave requests and multi-stage approvals.',
+    permission: 'flow.access',
+  },
+  {
+    id: 'connect',
+    name: 'Connect',
+    path: '/connect',
+    emoji: '📣',
+    color: '#33c2f1',
+    description: 'Announcements, inbox and notification preferences.',
+    permission: 'connect.access',
+  },
+  {
+    id: 'sphere',
+    name: 'Sphere',
+    path: '/sphere',
+    emoji: '🌐',
+    color: '#0ea5a4',
+    description: 'Communities, posts and campus collaboration.',
+    permission: 'sphere.access',
+  },
+  {
+    id: 'residence',
+    name: 'Residence',
+    path: '/residence',
+    emoji: '🏠',
+    color: '#0284c7',
+    description: 'Housing inventory, allocations and maintenance.',
+    permission: 'residence.access',
+  },
+  {
+    id: 'pulse',
+    name: 'Pulse',
+    path: '/pulse',
+    emoji: '🎟️',
+    color: '#0369a1',
+    description: 'Events, registration and campus calendar.',
+    permission: 'pulse.access',
+  },
+] as const;
+
+export type ModuleId = (typeof MODULES)[number]['id'];

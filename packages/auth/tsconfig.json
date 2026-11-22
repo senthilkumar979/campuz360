@@ -1,0 +1,7 @@
+{
+  "extends": "@campuz360/config/tsconfig.base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}
